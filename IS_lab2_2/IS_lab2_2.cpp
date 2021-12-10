@@ -264,7 +264,9 @@ int main()
     int ncross;
     double t; //коэф максимальной выживаемости у поколения
 
-    cout << "Введите число поколений  ";
+    cout << "   ЦЕЛОЧИСЛЕННОЕ КОДИРОВАНИЕ  ";
+
+    cout << "   Введите число поколений  ";
     cin >> maxgen;
 
     //массив для хранния максимальных значений
@@ -315,10 +317,10 @@ int main()
     cout << "Ответ: " << t;
     cout << endl;
 
-    ofstream Result("Result2.txt"); // созданием файл с результатом
+    ofstream Result("ResultCCode.txt"); // созданием файл с результатом
 
     if (Result.is_open()) // проверка на открытие
-        cout << "Ответ записан в файл Result2!\n\n" << endl;
+        cout << "Ответ записан в файл ResultCCode!\n\n" << endl;
     else
     {
         cout << "Ошибка записи в файл" << endl;
